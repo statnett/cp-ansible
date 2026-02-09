@@ -1,6 +1,11 @@
 
 # CP-Ansible
 
+## Why this fork was created
+
+There are several bugs in the upstream project that have not been fixed for a long time.
+As our related issues and pull requests have gone largely ignored, we've found it necessary to fork the project in order to keep it in a working state.
+
 ## Description
 
 Ansible provides a simple way to deploy, manage, and configure the Confluent Platform services. This repository provides playbooks and templates to easily spin up a Confluent Platform installation. Specifically this repository:
