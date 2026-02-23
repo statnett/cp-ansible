@@ -1516,6 +1516,9 @@ mds_file_based_user_store_dest_path: ""
 ### Authorization mode on all cp components. Possible values are ldap, oauth, ldap_with_oauth, mtls and none. Set this to oauth for OAuth cluster and ldap_with_oauth for cluster with both ldap and oauth support. When set to oauth or ldap_with_oauth, you must set oauth_jwks_uri, oauth_token_uri, oauth_issuer_url, oauth_superuser_client_id, oauth_superuser_client_password. When MDS only has mTLS and no user store then set it to mTLS. In case of OAuth/LDAP + mTLS keep it to ldap/oauth
 auth_mode: "{% if rbac_enabled|bool %}ldap{% else %}none{% endif %}"
 
+### Flag to bypass Confluent enterprise OAUTHBEARER logic. Useful if you are not using Confluent enterprise and would like to avoid their proprietary implementations.
+oauth_bypass_cp_enterprise_logic: false
+
 ### Client id used to authorize and request token from IdP via cp components. This is the super user for all MDS api calls
 oauth_superuser_client_id: none
 
