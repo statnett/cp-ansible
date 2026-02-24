@@ -2764,6 +2764,15 @@ Default:  sub
 
 ***
 
+### oauth_bypass_cp_enterprise_logic
+
+Flag to bypass Confluent enterprise OAUTHBEARER logic.
+Useful if you are not using Confluent enterprise and would like to avoid their proprietary implementations.
+
+Default: false
+
+***
+
 ### oauth_expected_audience
 
 The optional comma-delimited setting for MDS to use to verify that the JWT was issued for one of the expected audiences.
