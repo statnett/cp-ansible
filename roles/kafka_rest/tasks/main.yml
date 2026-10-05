@@ -347,7 +347,7 @@
     state: directory
     owner: "{{kafka_rest_user}}"
     group: "{{kafka_rest_group}}"
-    mode: '770'
+    mode: "{{kafka_log_dir_mode}}"
   tags:
     - filesystem
     - log

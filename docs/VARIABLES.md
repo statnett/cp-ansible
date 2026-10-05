@@ -8697,3 +8697,12 @@ Default:  2048
 
 ***
 
+# Misc
+
+***
+
+### kafka_log_dir_mode
+
+Mode of the directory in which log files are written.
+
+Default:  "{{ kafka_default_log_dir_mode }}"
