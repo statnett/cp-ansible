@@ -414,7 +414,7 @@
     state: directory
     group: "{{kafka_broker_group}}"
     owner: "{{kafka_broker_user}}"
-    mode: '770'
+    mode: "{{kafka_log_dir_mode}}"
   tags:
     - filesystem
     - log
