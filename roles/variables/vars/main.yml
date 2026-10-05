@@ -2963,3 +2963,5 @@ usm_agent_properties:
 usm_agent_combined_properties: "{{usm_agent_properties | confluent.platform.combine_properties}}"
 
 usm_agent_final_properties: "{{ usm_agent_combined_properties | combine(usm_agent_custom_properties) }}"
+
+kafka_default_log_dir_mode: "0770"

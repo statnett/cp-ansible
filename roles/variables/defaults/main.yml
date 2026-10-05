@@ -3528,3 +3528,5 @@ enable_schema_exporter: false
 
 ### Boolean to enable node_id configuration. When enabled, node_id will be used instead of broker_id.
 enable_node_id: true
+
+kafka_log_dir_mode: "{{ kafka_default_log_dir_mode }}"
